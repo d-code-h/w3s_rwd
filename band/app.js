@@ -1,5 +1,5 @@
 document.querySelector('nav #menu').addEventListener('click', () => {
-  document.querySelector('nav span').classList.toggle('animate');
+  document.querySelector('nav #menu-sm').classList.toggle('animate');
 });
 
 setInterval(() => {

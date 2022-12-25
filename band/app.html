@@ -27,18 +27,28 @@
           <ul>
             <li>
               <a href="#home">Home</a>
-              <button id="menu" type="button">
+              <button id="menu" type="button" aria-label="menu">
                 <i class="fa fa-bars" aria-hidden="true"></i>
               </button>
             </li>
-            <span id="menu-sm">
-              <li><a href="#band">Band</a></li>
-              <li><a href="#tour">Tour</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#">More</a></li>
-            </span>
+            <li id="menu-sm">
+              <ul>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="merch"><a href="#merch">Merch</a></li>
+                <li class="more">More <i class="fa fa-caret-down fa-sm"></i>
+                  <ul>
+                    <li class="merch"><a href="#merch">Merchandise</a></li>
+                    <li><a href="#extras">Extras</a></li>
+                    <li><a href="#media">Media</a></li>
+                  </ul>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <button type="button">
+          <button type="button" aria-label="search">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
         </nav>
@@ -125,12 +135,15 @@
           </div>
           <div class="venue">
             <div class="venue__info">
-              <img
-                src="./img/newyork.jpg"
-                alt="New York Tickets"
-                width="100%"
-                height="100%"
-              />
+              <div class="img">
+                <div class="cover"></div>
+                <img
+                  src="./img/newyork.jpg"
+                  alt="New York Tickets"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
               <div class="space-in">
                 <h5>New York</h5>
                 <p class="venue__info__date">Fri 27 Nov 2016</p>
@@ -144,12 +157,15 @@
               </div>
             </div>
             <div class="venue__info">
-              <img
-                src="./img/paris.jpg"
-                alt="Paris ticket"
-                width="100%"
-                height="100%"
-              />
+              <div class="img">
+                <div class="cover"></div>
+                <img
+                  src="./img/paris.jpg"
+                  alt="Paris ticket"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
               <div class="space-in">
                 <h5>Paris</h5>
                 <p class="venue__info__date">Sat 28 Nov 2016</p>
@@ -163,12 +179,15 @@
               </div>
             </div>
             <div class="venue__info">
-              <img
-                src="./img/sanfran.jpg"
-                alt="San Francisco Tickets"
-                width="100%"
-                height="100%"
-              />
+              <div class="img">
+                <div class="cover"></div>
+                <img
+                  src="./img/sanfran.jpg"
+                  alt="San Francisco Tickets"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
               <div class="space-in">
                 <h5>San Francisco</h5>
                 <p class="venue__info__date">Sun 29 Nov 2016</p>
