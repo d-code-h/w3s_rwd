@@ -2,11 +2,17 @@
   --bg1: #000;
   --bg2: #ccc;
   --bg3: #222;
+  --bg4: #fff;
+  --bg5: #616161;
+  --bg6: #f1f1f1;
   --col1: #fff;
   --col2: #000;
+  --col3: #757575;
+  --opacity1: 0.6;
 }
 * {
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 body,
@@ -20,6 +26,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  font-size: 0.9375rem;
   background-color: var(--bg1);
   color: var(--col1);
 }
@@ -43,7 +50,7 @@ nav a {
 }
 
 .link-dark {
-  opacity: 0.6 !important;
+  opacity: var(--opacity1) !important;
 }
 nav a:hover,
 .active {
@@ -55,6 +62,106 @@ nav a:hover,
 header img,
 nav i {
   display: none !important;
+}
+
+main {
+  padding: 0.75rem 1.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Hero Section */
+#hero h1 {
+  font-size: 4rem;
+  margin: 1rem auto;
+}
+#hero .am {
+  display: none;
+}
+
+/* About Section */
+#about h2 {
+  font-size: 1.875rem;
+}
+#about hr {
+  width: 12.5rem;
+  margin-left: 0;
+  opacity: var(--opacity1);
+}
+
+#about p,
+#skills h4 {
+  color: var(--col3);
+}
+
+#about p {
+  text-align: justify;
+}
+#skills h3 {
+  font-size: 1.5rem;
+}
+#skills h4 {
+  letter-spacing: 0.2rem;
+}
+#about .progress {
+  height: 1.87rem;
+  background-color: var(--bg4);
+  margin-bottom: 0.5rem;
+}
+.progress-bar {
+  background-color: var(--bg5);
+  height: 100%;
+}
+.progress:first-of-type .progress-bar {
+  width: 95%;
+}
+.progress:nth-of-type(2) .progress-bar {
+  width: 85%;
+}
+.progress:nth-of-type(3) .progress-bar {
+  width: 80%;
+}
+
+.pride {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg6);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.pride * {
+  color: var(--col2) !important;
+}
+.rec {
+  margin: 0.4688rem auto;
+}
+.rec h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.rec p {
+  margin-top: 0;
+}
+
+#about button {
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.4688rem;
+  border: none;
+  outline: none;
+}
+#about button:hover {
+  background-color: var(--bg2);
+}
+#about button i {
+  margin-right: 0.2rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -84,7 +191,6 @@ nav i {
     align-items: flex-start;
     padding: 0;
     height: 100%;
-    /* border: 2px solid red; */
   }
 
   header img,
@@ -123,7 +229,21 @@ nav i {
   main {
     position: absolute;
     left: 150px;
-    padding: 1rem;
-    text-align: center;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Hero Section */
+  #hero .am {
+    display: inline-block;
+  }
+
+  /* About Section */
+  .pride {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
