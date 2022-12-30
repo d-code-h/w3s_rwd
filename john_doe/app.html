@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
+    <div id="home"></div>
     <div id="container">
       <header>
         <img
@@ -116,10 +117,158 @@
                   <p>Meetings</p>
                 </div>
               </div>
-              <button><i class="fa fa-download"></i>Download Resume</button>
+              <button type="button">
+                <i class="fa fa-download"></i>Download Resume
+              </button>
             </section>
           </div>
+
+          <section id="price">
+            <div class="container">
+              <h3>My Price</h3>
+              <div class="price">
+                <div class="price__menu">
+                  <h3>Basic</h3>
+                  <p>Web Design</p>
+                  <p>Photography</p>
+                  <p>5GB Storage</p>
+                  <p>Mail Support</p>
+                  <p class="price__amount">
+                    <span class="amount"> $ 10 </span>
+                    <span class="duration"> per month </span>
+                  </p>
+                  <p><button type="button">Sign Up</button></p>
+                </div>
+                <div class="price__menu">
+                  <h3>Pro</h3>
+                  <p>Web Design</p>
+                  <p>Photography</p>
+                  <p>50GB Storage</p>
+                  <p>Endless Support</p>
+                  <p class="price__amount">
+                    <span class="amount"> $ 25 </span>
+                    <span class="duration"> per month </span>
+                  </p>
+                  <p><button type="button">Sign Up</button></p>
+                </div>
+              </div>
+              <section id="reputation">
+                <h3>My Reputation</h3>
+                <div class="reputation">
+                  <div class="reputation__info">
+                    <img src="./images/fox.jpg" alt="CEO at Mighty Schools" />
+                    <div class="reputation__info__cont">
+                      <h4>
+                        <span class="title"> Chris Fox. </span> CEO at Mighty
+                        Schools.
+                      </h4>
+                      <p>John Doe saved us from a web disaster.</p>
+                    </div>
+                  </div>
+                  <div class="reputation__info">
+                    <img src="./images/flex.jpg" alt="CEO at Company." />
+                    <div class="reputation__info__cont">
+                      <h4>
+                        <span class="title"> Rebecca Flex. </span> CEO at
+                        Company.
+                      </h4>
+                      <p>No one is better than John Doe.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
         </section>
+        <section id="photos">
+          <div class="container">
+            <h2>My Photos</h2>
+            <hr />
+            <div class="photos">
+              <div class="photos__grow">
+                <img src="./images/wedding.jpg" alt="Wedding" width="100%" />
+                <img src="./images/rocks.jpg" alt="Rocks" width="100%" />
+                <img src="./images/sailboat.jpg" alt="Sailboat" width="100%" />
+              </div>
+              <div class="photos__grow">
+                <img
+                  src="./images/underwater.jpg"
+                  alt="Underwater"
+                  width="100%"
+                />
+                <img src="./images/chef.jpg" alt="Chef" width="100%" />
+                <img src="./images/wedding.jpg" alt="Wedding" width="100%" />
+                <img src="./images/p6.jpg" alt="P6" width="100%" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <h2>Contact Me</h2>
+            <hr />
+            <div class="contact">
+              <div class="contact__me">
+                <div class="contact__me__info">
+                  <i class="fa fa-location-dot"></i
+                  ><span class="info">Chicago, US</span>
+                </div>
+                <div class="contact__me__info">
+                  <i class="fa fa-phone"></i
+                  ><span class="info">Phone: +00 151515</span>
+                </div>
+                <div class="contact__me__info">
+                  <i class="fa fa-envelope"></i
+                  ><span class="info">Email: mail@mail.com</span>
+                </div>
+              </div>
+              <div class="contact__email">
+                <p>Let's get in touch. Send me a message:</p>
+                <form action="#" method="POST">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                  <input
+                    type="text"
+                    name="msg"
+                    id="msg"
+                    placeholder="Message"
+                  />
+                  <button type="submit">
+                    <i class="fa fa-paper-plane"></i
+                    ><span class="submit">Send Message</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="icons">
+              <i class="fab fa-square-facebook" aria-hidden="true"></i>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <i class="fab fa-snapchat" aria-hidden="true"></i>
+              <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </div>
+            <p>
+              <small> Powered by <a href="#">w3.css</a></small>
+            </p>
+          </div>
+        </footer>
       </main>
     </div>
     <script src="./app.js"></script>
