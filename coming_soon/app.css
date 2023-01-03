@@ -10,13 +10,21 @@ body,
 html {
   margin: 0;
   padding: 0;
-  width: 100%;
   height: 100vh;
 }
-
+body,
+html,
 #container {
-  margin: 0;
   width: 100%;
+}
+body,
+html,
+#container,
+h4,
+footer p {
+  margin: 0;
+}
+#container {
   height: 100%;
 
   background-image: url('./forestbridge.jpg');
@@ -29,7 +37,6 @@ html {
 h4 {
   padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
-  margin: 0;
 }
 main {
   margin: auto;
@@ -66,7 +73,6 @@ footer {
   font-size: 0.9375rem;
 }
 footer p {
-  margin: 0;
   padding: 0.75rem 1.5rem;
 }
 
